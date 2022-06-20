@@ -23,6 +23,7 @@ function eventos() {
 function iniciarApp() {
     email.focus();
     submit.disabled = true;
+    submit.classList.remove('enviar--active')
 }
 
 function resetInputs(e) {
@@ -102,4 +103,6 @@ function enviarFormulario(e) {
             resetInputs()
         }, 3000);
     }
+
+    iniciarApp();
 }
